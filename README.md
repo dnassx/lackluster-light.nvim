@@ -1,10 +1,6 @@
 # lackluster
 > a delightful and customizable mostly monochrome colorscheme thats soft on the eyes and supports treesitter, lsp, and heaps of neovim plugins.
 
-### !!WARNING!!
-I'm too busy and will no longer be activly developing this any more. I am happy to accept pull requests for bug fixes
-or new plugin support if someone wants to contribute :) It should still work great for most setups as is though.
-
 ![a screenshot of neovim with the lackluster colorscheme](https://raw.githubusercontent.com/dnassx/lackluster-light.nvim/main/asset/lackluster.png)
 
 > a minimal but flexible and good looking pallet made from beautiful hexcodes
