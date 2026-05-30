@@ -5,11 +5,11 @@
 I'm too busy and will no longer be activly developing this any more. I am happy to accept pull requests for bug fixes
 or new plugin support if someone wants to contribute :) It should still work great for most setups as is though.
 
-![a screenshot of neovim with the lackluster colorscheme](https://raw.githubusercontent.com/slugbyte/lackluster.nvim/main/asset/lackluster.png)
+![a screenshot of neovim with the lackluster colorscheme](https://raw.githubusercontent.com/dnassx/lackluster-light.nvim/main/asset/lackluster.png)
 
 > a minimal but flexible and good looking pallet made from beautiful hexcodes
 
-[a bunch more screenshots...](https://github.com/slugbyte/lackluster.nvim/blob/main/SCREENSHOT.md)
+[a bunch more screenshots...](https://github.com/dnassx/lackluster-light.nvim/blob/main/SCREENSHOT.md)
 
 
 ### ABOUT
@@ -18,7 +18,7 @@ or new plugin support if someone wants to contribute :) It should still work gre
 * Easy on the eyes
 
 ## SETUP
-1. Install `slugbyte/lackluster.nvim` with your favorite package manager
+1. Install `dnassx/lackluster-light.nvim` with your favorite package manager
 2. Set your colorscheme to `lackluster`, `lackluster-hack`, or `lackluster-mint`
 3. (optional) Setup Lualine
 5. (optional) Tweak Color Pallet
@@ -31,7 +31,7 @@ or new plugin support if someone wants to contribute :) It should still work gre
 ```lua 
 -- example lazy.nvim install setup
 return {
-    "slugbyte/lackluster.nvim",
+    "dnassx/lackluster-light.nvim",
     lazy = false,
     priority = 1000,
     init = function()
@@ -291,18 +291,18 @@ vim.cmd.colorscheme("lackluster")
 ## VARIATIONS
 > lackluster-hack (return is green, exception is blue)
 
-![a screenshot of neovim with the lackluster-hack colorscheme](https://raw.githubusercontent.com/slugbyte/lackluster.nvim/main/asset/img/theme/lackluster-hack.png)
+![a screenshot of neovim with the lackluster-hack colorscheme](https://raw.githubusercontent.com/dnassx/lackluster-light.nvim/main/asset/img/theme/lackluster-hack.png)
 
 > lackluster-mint (types are green)
 
-![a screenshot of neovim with the lackluster-mint colorscheme](https://raw.githubusercontent.com/slugbyte/lackluster.nvim/main/asset/img/theme/lackluster-mint.png)
+![a screenshot of neovim with the lackluster-mint colorscheme](https://raw.githubusercontent.com/dnassx/lackluster-light.nvim/main/asset/img/theme/lackluster-mint.png)
 
-[more variations..](https://github.com/slugbyte/lackluster.nvim/blob/main/SCREENSHOT.md#experimental-variations)
+[more variations..](https://github.com/dnassx/lackluster-light.nvim/blob/main/SCREENSHOT.md#experimental-variations)
 
 ## EXPLICITLY SUPPORTED PLUGINS
 > lots of other plugins should work right out of the box too!
 
-Screenshots of many of the plugins can be found [here](https://github.com/slugbyte/lackluster.nvim/blob/main/SCREENSHOT.md)
+Screenshots of many of the plugins can be found [here](https://github.com/dnassx/lackluster-light.nvim/blob/main/SCREENSHOT.md)
 
 * [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 * [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
@@ -348,8 +348,8 @@ If you like this project star the GitHub repository :)
 If you find a bug please open a issue :) and please include screenshots if relevant :)
 
 Is `lackluster` missing support for a plugin/extra you love? Open a suggestion issue, or
-better yet Read the [CONTRIBUTING](https://github.com/slugbyte/lackluster.nvim/blob/main/CONTRIBUTING.md) 
-and [DEVELOPMENT](https://github.com/slugbyte/lackluster.nvim/blob/main/DEVELOPMENT.md) Guides,
+better yet Read the [CONTRIBUTING](https://github.com/dnassx/lackluster-light.nvim/blob/main/CONTRIBUTING.md) 
+and [DEVELOPMENT](https://github.com/dnassx/lackluster-light.nvim/blob/main/DEVELOPMENT.md) Guides,
 and make a contribution!
 
 Your feedback and contributions are mega appreciated!
