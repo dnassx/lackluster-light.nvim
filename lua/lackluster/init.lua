@@ -13,6 +13,8 @@
 local dev = require("lackluster.dev")
 local color = require("lackluster.color")
 local color_special = require("lackluster.color-special")
+local color_light = require("lackluster.color-light")
+local color_special_light = require("lackluster.color-special-light")
 local create_theme = require("lackluster.create-theme")
 local tweak = require("lackluster.tweak")
 local highlight = require("lackluster.highlight")
@@ -231,6 +233,20 @@ local load_variant = function(opt)
     if opt.theme == "night" then
         theme.syntax = theme.syntax_night
         vim.g.colors_name = "lackluster-night"
+    end
+
+    if opt.theme == "light" then
+        active_color = color_light
+        theme = create_theme(color_light, color_special_light)
+        theme.ui = theme.ui_light
+        theme.syntax = theme.syntax_light
+        vim.g.colors_name = "lackluster-light"
+
+        if USER_CONFIG ~= nil then
+            tweak.background(USER_CONFIG.tweak_background, theme)
+            tweak.syntax(USER_CONFIG.tweak_syntax, theme)
+            tweak.ui(USER_CONFIG.tweak_ui, theme, active_color)
+        end
     end
 
     theme.syntax = vim.tbl_extend("force", theme.syntax, theme.syntax_tweak)

@@ -63,6 +63,58 @@ return function(color, color_special)
         bg_telescope = color_special.main_background,
     }
 
+    result.ui_light = vim.tbl_deep_extend("force", result.ui, {
+        fg_end_of_buffer = color_special.main_background,
+        fg_normal = color_special.text,
+        bg_normal = color_special.main_background,
+
+        fg_whitespace = color_special.whitespace,
+        fg_icon = color.gray5,
+
+        fg_button = color.gray6,
+        bg_button = color_special.popup_background,
+        fg_button_active = color_special.text,
+        bg_button_active = color_special.bg_overlay,
+
+        fg_title = color_special.text_muted,
+
+        fg_statusline_nc = color.gray5,
+        bg_statusline_nc = color_special.bg_subtle,
+        fg_statusline = color_special.text,
+        bg_statusline = color_special.statusline,
+
+        fg_tab_nc = color.gray5,
+        bg_tab_nc = color_special.bg_subtle,
+        fg_tab_active = color_special.text,
+        bg_tab_active = color_special.bg_overlay,
+
+        fg_line_num = color.gray4,
+        fg_line_num_cur = color.gray7,
+        fg_border = color_special.bg_overlay,
+
+        bg_colorcolumn = color_special.bg_colorcolumn,
+        bg_cursorline = color_special.bg_subtle,
+
+        bg_visual = color_special.bg_overlay,
+        fg_visual = color.black,
+
+        fg_search = color.black,
+        bg_search_item = color_special.bg_search,
+        bg_search_cur = color_special.bg_search_cur,
+
+        bg_scrollbar = color_special.statusline,
+        fg_scrollbar = color.gray5,
+
+        fg_popup = color_special.text_muted,
+        bg_popup = color_special.popup_background,
+
+        fg_menu = color_special.text_muted,
+        bg_menu = color_special.menu_background,
+
+        fg_telescope = color_special.text,
+        bg_telescope = color_special.main_background,
+    })
+
     ---@class LacklusterThemeSyntax
     result.syntax_default = {
         tag = color.gray5,
@@ -133,6 +185,29 @@ return function(color, color_special)
         punctuation = color.gray6,
         comment = color_special.comment,
     }
+
+    ---@type LacklusterThemeSyntax
+    result.syntax_light = vim.tbl_deep_extend("force", result.syntax_default, {
+        var = color_special.text,
+        var_member = color_special.text_muted,
+        const = color_special.text_muted,
+        const_builtin = color.gray6,
+
+        func_def = color_special.func_def,
+        func_call = color.gray7,
+
+        special = color.lack,
+        type = color_special.type,
+        type_def = color_special.type_def,
+        type_primitive = color_special.type,
+
+        builtin = color_special.builtin,
+        keyword_return = color.green,
+        keyword_exception = color_special.keyword_exception,
+
+        string = color.green,
+        string_escape = color_special.string_escape,
+    })
 
     --- syntax_tweaks get applied by setup()
     ---@type LacklusterThemeSyntax
