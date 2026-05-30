@@ -1,4 +1,4 @@
-# lackluster
+# lackluster-light
 > a delightful and customizable mostly monochrome colorscheme thats soft on the eyes and supports treesitter, lsp, and heaps of neovim plugins.
 
 ![a screenshot of neovim with the lackluster colorscheme](https://raw.githubusercontent.com/dnassx/lackluster-light.nvim/main/asset/lackluster.png)
